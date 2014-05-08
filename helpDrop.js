@@ -1,7 +1,6 @@
 $(document).ready(function(){
-
-		var tourText = document.createElement("script"); tourText.type = "text/javascript"; tourText.src = /*"indexIntro.js"; */"https://raw.github.com/kivuto/e5tour/master/indexIntro.js"; $("head").append(tourText);
 		var tourScript = document.createElement("script"); tourScript.type = "text/javascript"; tourScript.src = /*"intro.js";*/"https://raw.github.com/kivuto/e5tour/master/intro.js"; $("head").append(tourScript);
+		var tourText = document.createElement("script"); tourText.type = "text/javascript"; tourText.src = /*"indexIntro.js"; */"https://raw.github.com/kivuto/e5tour/master/indexIntro.js"; $("head").append(tourText);
 		var tourCSS = document.createElement("link"); tourCSS.rel="stylesheet"; tourCSS.type = "text/css"; tourCSS.href = /*"introjs.css";*/ "https://raw.github.com/kivuto/e5tour/master/introjs.css"; $("head").append(tourCSS);
 
 		var active = sessionStorage.isTour;
