@@ -509,7 +509,7 @@
     }
 
     //Save current step number to web storage.
-    sessionStorage.currentSessStep = this._currentStep + 1;
+    sessionStorage.currentSessStep = this._currentStep + 2;
 
     var self = this,
         oldHelperLayer = document.querySelector('.introjs-helperLayer'),
