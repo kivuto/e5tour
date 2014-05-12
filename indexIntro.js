@@ -1,4 +1,6 @@
 function indexTourStart(curr){
+ 
+  $(".ui-dialog-content").dialog("close");
 
   var introguide = introJs();
   sessionStorage.isTour = true;
@@ -19,9 +21,6 @@ function indexTourStart(curr){
   introguide.setOptions({
     steps: [
     {
-    	intro: "The following will outline how to Import Users"
-    },
-    {
       element: $("a.ymenu-folder:contains('Users')")[0],
       intro: 'Find Users Here',
       position: 'right'
@@ -29,7 +28,7 @@ function indexTourStart(curr){
     {
       element: $("ul > li > a:contains('User Imports')")[0],
       intro: 'This page displays all imports that have been done to this organization.',
-      position: 'right',
+      position: 'bottom',
       //TODO tooltipCSSClass to make next button inactive.
     },
     /*------------PAGE SWITCH-----------*/

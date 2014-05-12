@@ -1,3 +1,32 @@
+.ui-dialog
+{
+  border-radius: 0%;
+  font-size: 14pt;
+}
+
+.ui-dialog-titlebar{
+    background: #39f;
+    border:none;
+    border-radius: 0%;
+
+}
+
+.ui-dialog-content li{
+  list-style-type: none;
+  padding-bottom: 25px;
+  margin-left: -40px;
+}
+
+.ui-dialog-content p{
+  padding-bottom: 20px;
+}
+
+.ui-dialog-content a{
+  font-size: 12pt;
+  color: #39f;
+}
+
+
 .introjs-overlay {
   position: absolute;
   z-index: 999999;
