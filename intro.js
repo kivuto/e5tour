@@ -467,6 +467,7 @@
    * @param {Object} helperLayer
    */
   function _setHelperLayerPosition(helperLayer) {
+
     if (helperLayer) {
       //prevent error when `this._currentStep` in undefined
       if (!this._introItems[this._currentStep]) return;
@@ -495,6 +496,13 @@
    * @param {Object} targetElement
    */
   function _showElement(targetElement) {
+    
+    //Allows tour to jump to hidden menu items.
+    if(targetElement.element.offsetParent === null)
+    {
+      targetElement.element.parentNode.parentNode.style.visibility="visible";
+      targetElement.element.parentNode.parentNode.style.display="inline";
+    }
 
     if (typeof (this._introChangeCallback) !== 'undefined') {
         this._introChangeCallback.call(this, targetElement.element);
@@ -683,7 +691,7 @@
       }
 
       tooltipLayer.appendChild(buttonsLayer);
-
+      
       //set proper position
       _placeTooltip.call(self, targetElement.element, tooltipLayer, arrowLayer, helperNumberLayer);
     }
