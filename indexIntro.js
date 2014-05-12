@@ -51,7 +51,7 @@ function indexTourStart(curr){
 
     },
     {
-      element: 'ctl00_ctl00_cpContent_cpDetails_efvUserImportBatchDetails_isOrganization',
+      element: '#ctl00_ctl00_cpContent_cpDetails_efvUserImportBatchDetails_isOrganization',
       intro: 'Select your member organization if it is not already properly selected.',
       position: 'bottom'
     }

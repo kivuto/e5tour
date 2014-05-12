@@ -5,7 +5,7 @@
 }
 
 .ui-dialog-titlebar{
-    background: #39f;
+    background: #39f !important;
     border:none;
     border-radius: 0%;
 
@@ -22,8 +22,13 @@
 }
 
 .ui-dialog-content a{
+  cursor:pointer;
   font-size: 12pt;
-  color: #39f;
+  color: #39f !important;
+}
+
+.ui-dialog-content a:hover{
+  color:#07e !important;
 }
 
 
