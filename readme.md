@@ -1,8 +1,8 @@
-## Intro.JS Tour Installation and Use ##
+## Booster Walkthrough Installation and Use ##
 
 ### Installation ###
 
-The tour system, created for e5, requires three additional Javascript files, and a CSS file for styling the tour.
+The walkthrough system, created for e5, requires three additional Javascript files, and a CSS file for styling the tour.
 
 - ####intro.js####
 	- A slightly modifired version of the intro.js libary, from usabil.com. Changes made to save variables, including step and tour number, and code for applying tooltips to invisible elements.
