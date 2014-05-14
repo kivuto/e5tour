@@ -1,14 +1,15 @@
-.ui-dialog
-{
+/*-----------------------------------------
+MODAL CSS
+-----------------------------------------*/
+.ui-dialog{
   border-radius: 0%;
   font-size: 14pt;
 }
 
 .ui-dialog-titlebar{
     background: #39f !important;
-    border:none;
+    border:none !important;
     border-radius: 0%;
-
 }
 
 .ui-dialog-content li{
@@ -31,6 +32,9 @@
   color:#07e !important;
 }
 
+/*-----------------------------------------
+INTRO CSS
+-----------------------------------------*/
 
 .introjs-overlay {
   position: absolute;
@@ -286,4 +290,26 @@
   width: 0;
   left: 50%;
   top: 50%;
+}
+
+.introjs-tooltip .introjs-bullets{
+  display: none;
+}
+
+.introjs-tooltip .introjs-skipbutton{
+  display: none;
+}
+
+.introjs-tooltip.last .introjs-nextbutton{
+  display: none;
+}
+.introjs-tooltip.last .introjs-prevbutton{
+  border-right: 1px solid #bcbcbc;
+}
+
+.introjs-tooltip.first .introjs-prevbutton{
+  display: none;
+}
+.introjs-tooltip.first .introjs-nextbutton{
+  border-left: 1px solid #bcbcbc;
 }
