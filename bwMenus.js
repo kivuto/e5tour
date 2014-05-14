@@ -37,10 +37,10 @@ $(document).ready(function(){
 	[
 		//English
 		[
-			"<div id='DialogMain' title='Learning Resources'><p>Use the following tours to accommodate yourself with e5 and learn all of the tips and tricks required.</p><ul><li><a onclick='loadPage(1);'>Importing Users</a><li><a onclick='loadPage(2)'>Searching for Organizations</a><li><a onclick='loadPage(3)'>Adding Products</a></li></ul></div>",
-			"<div title='Importing Users' id='DialogDiv1'><p>This tour will walk you through importing users to your database.</p><a onclick='indexTourStart(false, 1, 0);'>Start Learning</a></div>", //Link starts walkthrough (active, walkthrough id, language)
-			"<div title='Searching for Organizations' id='DialogDiv2'><p>This tour will walk you through setting up and searching organizations.</p><a onclick='indexTourStart(false, 2, 0);'>Start Learning</a></div>",
-			"<div title='Adding Products' id='DialogDiv3'><p>This tour will walk you through importing products to your database.</p><a onclick='indexTourStart(false, 3, 0);'>Start Learning</a></div>"
+			"<div id='DialogMain' title='Learning Resources'><p>Use the following walkthroughs to accommodate yourself with e5 and learn all of the tips and tricks required.</p><ul><li><a onclick='loadPage(1);'>Importing Users</a><li><a onclick='loadPage(2)'>Searching for Organizations</a><li><a onclick='loadPage(3)'>Adding Products</a></li></ul></div>",
+			"<div title='Importing Users' id='DialogDiv1'><p>This walkthroughs will walk you through importing users to your database.</p><a onclick='indexTourStart(false, 1, 0);'>Start Learning</a></div>", //Link starts walkthrough (active, walkthrough id, language)
+			"<div title='Searching for Organizations' id='DialogDiv2'><p>This walkthroughs will walk you through setting up and searching organizations.</p><a onclick='indexTourStart(false, 2, 0);'>Start Learning</a></div>",
+			"<div title='Adding Products' id='DialogDiv3'><p>This walkthroughs will walk you through importing products to your database.</p><a onclick='indexTourStart(false, 3, 0);'>Start Learning</a></div>"
 		],						
 		//French
 		[
@@ -96,24 +96,31 @@ $(document).ready(function(){
 	      	break;
 	    //Espanol  
 	    case 12:
+	    	cLang = 3;
 	      	break;
 	    //Italiano
-	    case 63:
+	    case 63:	    	
+	    	cLang = 4;
 	      	break;
 	    //magyar
 	    case 37:
+	    	cLang = 5;
 	      	break;
 	    //Portuguese
 	    case 8:
+	    	cLang = 6;
 	      	break;
 	    //Русский
 	    case 77:
+	    	cLang = 7;
 	      	break;
 	    //中文 (简体，中国)
 	    case 74:
+	    	cLang = 8;
 	      	break;
 	    //日本語バージョン
 	    case 3:
+	    	cLang = 9;
 	      	break;
 	    default:
 	      	break;
@@ -122,7 +129,7 @@ $(document).ready(function(){
 	//Adds a dynamic walkthrough button to the main page.
 	if($('#helpbutton').length > 0)
 	{						
-		$('li > #helpbutton').append("<li><span><a id='startTours' style='cursor:pointer'>Tour</a></span></li>");
+		$('li > #helpbutton').append("<li><span><a id='startTours' style='cursor:pointer'>Walkthroughs</a></span></li>");
 	}
 
 	//Checks if a walkthrough is active and restarts it
