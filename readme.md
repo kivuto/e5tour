@@ -6,8 +6,10 @@ The tour system, created for e5, requires three additional Javascript files, and
 
 - ####intro.js####
 	- A slightly modifired version of the intro.js libary, from usabil.com. Changes made to save variables, including step and tour number, and code for applying tooltips to invisible elements.
+
 - ####bwContent.js####
 	- This file is where all walkthroughs will be outlined. Single file includes all walkthroughs, and all steps are outlined here. 
+
 - ####bwMenus.js####
 	- A file created to dynamically include a tour link and create starting modal menus for selecting tours.
 
