@@ -2,22 +2,22 @@
 
 ### Installation ###
 
-The walkthrough system, created for e5, requires two additional Javascript files, and a CSS file for styling the tour.
+The walkthrough system, created for e5, requires two additional Javascript files, and a CSS file for styling the steps.
 
 - ####intro.js####
-	- A slightly modifired version of the intro.js libary, from usabil.com. Changes made to save variables, including step and tour number, and code for applying tooltips to invisible elements.
+	- A slightly modifired version of the intro.js libary, from usabil.com. Changes made to save variables, including step and walkthrough number, and code for applying tooltips to invisible elements.
 
 - ####boosterWalkthrough.js####
-	- (Part 1 - Booster Menus) A file created to dynamically include a tour link and create starting modal menus for selecting tours.
+	- (Part 1 - Booster Menus) A file created to dynamically include a walkthrough link and create starting modal menus for selecting walkthroughs.
 	- (Part 2 - Booster Contents) All walkthroughs will be outlined here. Single file includes all walkthroughs, and all steps are outlined here. 
 
 
 - ####introCSS####
-	- Styles the tours and modals.
+	- Styles the tool tips and modals.
 
-Once these files are included in the web page, a tour button will appear beside help. boosterWalkthrough.js must be modified to match the page before the tour will occur.
+Once these files are included in the web page, a walkthrough button will appear beside help. boosterWalkthrough.js must be modified to match the page before the walkthrough will occur.
 
-### Editing Tour ###
+### Editing Walkthroughs ###
 
 **Modal Menus**
 
@@ -96,7 +96,7 @@ Each link on the main menu page runs a script called `loadPage` that
 
 Links on the sub pages run a function called `indexTourStart`. These take three parameters. (activity, the current walkthrough and language.)**
 
-- ***Activity:*** A boolean stating whether a tour is active. False if starting a new one.
+- ***Activity:*** A boolean stating whether a walkthrough is active. False if starting a new one.
 - ***Current Walkthrough:*** An integer, determining which walkthrough should be opened and played. Goes by the order in which they are made in `boosterWalkthrough.js`.
 - ***Language***: The language to be used. In order as listed in switch case.
 
@@ -111,7 +111,7 @@ This script also checks `sessionStorage` to see if a walkthrough is already runn
 Content is controlled by the function `indexTourStart`.It takes three parameters. When it runs, it
 
 - Saves the current walkthrough ID to `sessionStorage` (int)
-- Saves that a tour is now active, to `sessionStorage` (bool)
+- Saves that a walkthrough is now active, to `sessionStorage` (bool)
 - reads which language to use
 - initializes an empty walkthrough. (`introguide`, an instance of an `intro.js` class)
 
@@ -121,7 +121,7 @@ The function then runs a switch case, checking the walkthrough ID passed earlier
 
 ....................................
 
-Lastly, the function checks whether a tour is active, taking the parameter passed earlier. 
+Lastly, the function checks whether a walkthrough is active, taking the parameter passed earlier. 
 
 - If it's a new walkthrough, the guide is started from the beginning.
 - Otherwise, it reads a variable saved to `sessionStorage` on the previous page of the walkthrough.
