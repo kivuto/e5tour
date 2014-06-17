@@ -1,6 +1,6 @@
 ## Booster Walkthrough Installation and Use ##
 
-### Screen Shots ###
+### Screen Shots When Applied to e5 ###
 
 ![Walk Throughs Menu Item is generated](/screenshots/e5t_1.png?raw=true)
 
