@@ -2,7 +2,15 @@
 
 ### Screen Shots ###
 
-![Alt text](/screenshots/e5t_1.jpg?raw=true)
+![Walk Throughs Menu Item is generated](/screenshots/e5t_1.png?raw=true)
+
+![Alt text](/screenshots/e5t_2.png?raw=true)
+
+![Alt text](/screenshots/e5t_3.png?raw=true)
+
+![Alt text](/screenshots/e5t_4.png?raw=true)
+
+![Alt text](/screenshots/e5t_5.png?raw=true)
 
 ### Installation ###
 
