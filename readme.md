@@ -1,5 +1,9 @@
 ## Booster Walkthrough Installation and Use ##
 
+### Screen Shots ###
+
+![Alt text](/screenshots/e5t_1.jpg?raw=true)
+
 ### Installation ###
 
 The walkthrough system, created for e5, requires two additional Javascript files, and a CSS file for styling the steps.
